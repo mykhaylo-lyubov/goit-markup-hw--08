@@ -1,0 +1,23 @@
+.header-button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .close {
+    display: none;
+  }
+
+  &.is-open .close {
+    display: block;
+  }
+
+  &.is-open .menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet-1) {
+    display: none;
+  }
+}

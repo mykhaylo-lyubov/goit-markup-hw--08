@@ -1,0 +1,122 @@
+.logo-address {
+  @media screen and (max-width: $tablet-1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+  & .contacts {
+    @media screen and (max-width: $tablet-1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: none;
+    }
+  }
+}
+.logo-link-footer {
+  color: $accent-color;
+
+  font-family: raleway, sans-serif;
+  @include font(700, 22px, 1.18);
+
+  text-decoration: none;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(700, 26px, 1.19);
+  }
+
+  & > span {
+    color: #fff;
+  }
+}
+
+.address,
+.social-links-title {
+  color: $text-on-the-button-color;
+}
+
+.footer {
+  .address {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-style: normal;
+    @include font($weight: 400, $height: 1.71);
+  }
+
+  address {
+    @media screen and (max-width: $tablet-1) {
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-contacts {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    @include font($weight: 400, $height: 1.71);
+
+    text-decoration: none;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: $text-on-the-button-color;
+
+    @include font(700);
+
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.contacts {
+  & > .item {
+    @media screen and (max-width: $tablet-1) {
+      margin-top: 8px;
+    }
+  }
+  & > .item:nth-child(1) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+  }
+}

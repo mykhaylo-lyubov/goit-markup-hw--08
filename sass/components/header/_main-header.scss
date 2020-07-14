@@ -1,0 +1,29 @@
+@import "./logo-link";
+
+.header-font {
+  @include font(500, 18px, 1.11, 0.02em);
+  text-decoration: none;
+
+  @media screen and (min-width: $tablet) {
+    font-style: normal;
+
+    @include font(500, 14px, 1.12, 00.02em);
+  }
+}
+
+.header {
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@import "./header-navigation";
+@import "./header-button-menu";

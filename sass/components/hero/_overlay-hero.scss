@@ -1,0 +1,56 @@
+.hero {
+  .overlay {
+    max-width: 1600px;
+
+    @media screen and (max-width: $tablet-1) {
+      height: 400px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/header-img-tablet/header-img.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @media screen and (max-width: $mobile) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/header-img-mobile/header-img.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @media screen and (min-width: $tablet) {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 600px;
+    }
+    // height: 600px;
+    background-color: black;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/header-img-desktop/header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: $tablet-1) {
+      padding-top: 118px;
+    }
+    // padding-top: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

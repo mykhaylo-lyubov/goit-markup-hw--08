@@ -1,0 +1,24 @@
+.footer {
+  background-color: #2f303a;
+  @media screen and (max-width: $tablet-1) {
+    padding-top: 60px;
+  }
+  // padding-top: 48px;
+
+  &-main {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+  }
+}
+
+@import "./footer-address";
+@import "./footer-join-us";
+@import "./footer-subscription-form";
+@import "./copyright";

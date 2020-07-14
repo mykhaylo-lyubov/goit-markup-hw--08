@@ -1,0 +1,27 @@
+.logo-link {
+  color: $primary-title-color;
+
+  @media screen and (max-width: $tablet-1) {
+    font-family: raleway, sans-serif;
+    @include font(900, 24px, 1.16);
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-family: raleway, sans-serif;
+    @include font(900, 24px, 1.16);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-family: raleway, sans-serif;
+    @include font(700, 26px, 1.19);
+  }
+
+  // font-family: raleway, sans-serif;
+  // @include font(700, 26px, 1.19);
+
+  text-decoration: none;
+
+  & > span {
+    color: $accent-color;
+  }
+}

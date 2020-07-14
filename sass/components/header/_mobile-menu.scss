@@ -1,0 +1,39 @@
+.mobile-menu {
+  @media screen and (max-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #ececec;
+
+    // position: absolute;
+
+    // display: none;
+  }
+  @media screen and (max-width: $tablet-1) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+
+    background-color: #fff;
+    border-top: 1px solid #ececec;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
+
+  &.is-open {
+    display: block;
+    z-index: 5;
+  }
+}

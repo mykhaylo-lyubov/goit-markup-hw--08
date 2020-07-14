@@ -1,0 +1,115 @@
+.footer-form {
+  @media screen and (max-width: $tablet-1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: -webkit-center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
+  .title {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  // & > label {
+  //   width: 358px;
+  // }
+}
+
+.footer-subscription {
+  @media screen and (max-width: $tablet-1) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.subscription-input {
+  background-color: transparent;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-size: 22px;
+  color: #fff;
+
+  &::placeholder {
+    @include font($weight: 400, $size: 16px, $height: 1.87);
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: $tablet-1) {
+    width: calc(100% - 30px);
+    height: 50px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 448px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
+}
+
+.button-footer {
+  display: flex;
+  @media screen and (max-width: $tablet-1) {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 12px;
+  }
+
+  background-color: $accent-color;
+  color: $text-on-the-button-color;
+  padding: 10px 28px;
+  width: 200px;
+  // margin-left: 12px;
+
+  height: 50px;
+
+  border: 0px solid var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include font(900, 16px, 1.9, 0.06em);
+
+  align-items: flex-end;
+  // align-self: flex-end;
+
+  fill: #fff;
+}
+
+.portfolio-icon-send {
+  margin-left: 10px;
+}
